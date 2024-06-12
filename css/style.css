@@ -1,6 +1,12 @@
-
+/* Variaveis das cores */
+/* tema dark */
 :root, :root[data-theme='dark'] {
     --primary-color: #f0f0f0;
     --primary-bg-color: #111217;
 
 }
+body{ 
+    background: var(..primary.bg.color);
+}
+/* tema dark */
+:root[data-theae]
