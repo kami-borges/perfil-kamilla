@@ -1,12 +1,22 @@
-/* Variaveis das cores */
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alfa+Slab+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+
+/* variaveis das cores */
 /* tema dark */
 :root, :root[data-theme='dark'] {
     --primary-color: #f0f0f0;
     --primary-bg-color: #111217;
 
 }
-body{ 
-    background: var(..primary.bg.color);
+/* Tema LIGHT */
+:root, :root[date-theme='light']{
+    --primary-color:#000; /* cor principal textos */
+    --primary-bg-color: #c3c9c5;
 }
-/* tema dark */
-:root[data-theae]
+
+body{ 
+    background: var(--primary-bg-color); /* COR FUNDO */
+    color:var(--primary-bg-color); /* COR GERAL DOS TEXTOS */
+}
