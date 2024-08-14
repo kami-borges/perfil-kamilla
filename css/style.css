@@ -75,8 +75,90 @@ i {
     padding: 0.5rem 1rem;
     z-index: 2;/*sobreposição*/
 }
-   
-.header-logo .logo{
+   .header-logo .logo{
     width: 3.25rem;
-    height: 3.25rem;
+    height: 3.25rem; 
+
+
+}
+#toggleTheme{
+    font-size:1.5rem;
+    color: var (--icon-color);
+    cursor: pointer;
+    transition: ease;
+}
+
+.menu{
+    display: flex;
+    /* Torna Elemento um Flex container automaticamente transformando todos os filhos  diretos em Flex Itens*/
+    align-items: center; 
+    background: var(--primary-bg-color);
+    gap: 1rem;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.menu-mobile {  /*ul*/
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-border-color);
+}
+
+.menu-mobile .menu-link{
+   flex-direction: column;
+   justify-content: center;
+   padding: .5rem 1rem; 
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text, 
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text{
+     color: var(--link-hover);
+}
+
+.menu-icon, .menu-text{
+     color: var(--link-color);
+     font-weight: 600;
+}
+
+.menu-icon{
+     font-size: 1.5rem;
+}
+
+.menu-text{  
+     font-size: .75rem;
+     text-transform: uppercase;
+}
+ 
+.header-nav {
+     display: none;
+}
+
+.menu-principal {
+     gap: 1rem;
+}
+
+
+/*==== -------------------------- ======*/
+
+/* css responsivo*/ 
+@media (min-width:768px) { 
+     .header {
+       position: fixed; 
+       border-bottom: 1px solid var(--primary-border-color);
+       padding: 1rem 6rem;
+     }
+     .nav-mobile { 
+        display: none;
+}
+.header-nav {
+    display: flex; 
+   }
 }
