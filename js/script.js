@@ -1,7 +1,7 @@
 const toggleTheme = document.getElementById("toggleTheme");
 const rootHtml = document.documentElement;
 
-const accordionHeaders = document.querySelectorAll(".accordion-header");
+const acc-ordionHeaders = document.querySelectorAll(".accordion-header");
 
 
 
