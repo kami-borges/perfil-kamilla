@@ -237,6 +237,13 @@ html[data-theme='light'] .logo2 {
     gap: 2rem;
 }
 
+.card-cover1 {
+    width: 20%;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: center;
+}
+
 .card-cover {
     width: 100%;
     border-radius: 2rem;
@@ -259,6 +266,14 @@ html[data-theme='light'] .logo2 {
     font-family: 'Poppins';
 }
 
+.accordion-item.active .accordion-item.end{
+    border-radius: 0;
+}
+.accordion-body {
+   /* display: none; */
+   padding: 1.25rem;
+   flex-direction: column;
+}
 .card-description {
     color: var(--primary-color);
     /* font-size: ; */
@@ -367,9 +382,12 @@ html[data-theme='light'] .logo2 {
     border-radius: 0rem 0rem 1rem 1rem;
 }
 
+.accordion-item.active .accordion-item.end {
+    border-radius: 0;
+}
 
 .accordion-body {
-    /* display: none; */
+    display: none;
     padding: 1.25rem;
     flex-direction: column;
     text-align: justify;
@@ -378,7 +396,15 @@ html[data-theme='light'] .logo2 {
     border: 1px solid var(--primary-border-color);
 }
 
+.accordion-item.active .accordion-header {
+    background: var(--secondary-bg-color);
+}
 
+.accordion-item.active .accordion-body {
+    display: flex;
+}
+
+/* Rotacionar Icone */
 
 /* =====  --------------------- ======= */
 
